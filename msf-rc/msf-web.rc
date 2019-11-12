@@ -1,0 +1,6 @@
+spool logs/webdav_scanner.log
+use auxiliary/scanner/http/webdav_scanner
+set RHOSTS file:http-hosts.txt
+
+run
+spool off

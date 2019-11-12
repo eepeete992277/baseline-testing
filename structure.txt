@@ -1,0 +1,18 @@
+read $client
+mkdir $client
+
+/$client/subnets
+/$client/exclusions
+/$client/service-scans
+/$client/logs
+/$client/scanner-screens
+/$client/kali-screens
+/$client/report
+/$client/report/anon-share
+/$client/report/ntlm-relay
+/$client/report/snmp-strings
+
+
+
+/$client/report/NBTNS-llmnr-spoofing-poisoning
+/$client/report/IPv6

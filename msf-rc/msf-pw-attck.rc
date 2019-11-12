@@ -1,0 +1,41 @@
+setg verbose true
+
+spool logs/ssh_loginroot.log
+use auxiliary/scanner/ssh/ssh_login
+set rhosts file:ssh-hosts.txt
+set threads 5
+set USER_PASS file:/opt/iPeen/lists/common-ssh.txt
+run
+
+spool off
+
+spool logs/ftp_login.log
+use auxiliary/scanner/ftp/ftp_login
+set rhosts file:ftp-hosts.txt
+set threads 10
+set USER_PASS file:/opt/iPeen/lists/common-ftp.txt
+run
+
+spool off
+
+spool logs/telnet_login.log
+use auxiliary/scanner/telnet/telnet_login
+set rhosts file:telnet-hosts.txt
+set threads 5
+set USER_PASS file:/opt/iPeen/lists/common-telnet.txt
+run
+
+spool logs/mssql_login.log
+use auxiliary/scanner/mssql/mssql_login
+set RHOSTS file:mssql-hosts.txt
+set username sa
+set password sa
+
+spool off
+
+spool logs/postgres_login.log
+use auxiliary/scanner/postgres/postgres_login
+set RHOSTS file:postgresql-hosts.txt
+
+run
+spool off
