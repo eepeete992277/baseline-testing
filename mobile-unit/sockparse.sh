@@ -87,6 +87,7 @@ grep -A 1 -e "_SC_" $dmain1/* >> secrets.svc.parse
 cat secrets.svc.parse
 sleep 2
 
+### if svc accounts exists, runs svcChk.sh ###
 if [ "$(wc -l < secrets.svc.parse)" -gt "1" ];
 	then
     echo -e "\e[1;33m#######--SVC Account Found, Attempting Login--------##########\e[0m" && \
