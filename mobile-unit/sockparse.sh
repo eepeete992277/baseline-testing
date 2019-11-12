@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 #
 # This script will allow you to automate recursive
 # share listings and registry extr action through socks collected with
@@ -30,6 +30,8 @@ SMB       10.65.77.204.84   CORP/CORP-MDC$  FALSE        445
 SMB       192.168.1.2       corp1/eroyer  FALSE        445
 "
 
+cat sockslist | awk '{print $3}' | cut -d'/' -f1 >> domain.log
+dmain1="$(cat domain.log)"
 echo ""
 echo -e "\e[1;33mshares and reg socket input\e[0m"
 echo "Shares:"
