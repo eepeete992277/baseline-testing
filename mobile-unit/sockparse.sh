@@ -66,12 +66,15 @@ echo -e "\e[1;33m  Hashcat Switch -- 2100  \e[0m"
 cat dcc2.hashcat
 sleep 2
 
+
+## Fix/Complete -- Will parse local hashes and attempt lateraly movement
+
 echo -e "\e[1;33m\e[0m"
 echo -e "\e[1;33mLocal Hashes from Secrets\e[0m"
 sleep 2
-grep "DCC2" $dmain1/* | tee secret.dcc2.parse
-cat secret.dcc2.parse | echo ; cut -d ":" -f 2 secret.dcc2.parse | tee dcc2.hashcat
-sort dcc2.hashcat | uniq > dcc2.hashcat
+# grep "DCC2" $dmain1/* | tee secret.dcc2.parse
+# cat secret.dcc2.parse | echo ; cut -d ":" -f 2 secret.dcc2.parse | tee dcc2.hashcat
+# sort dcc2.hashcat | uniq > dcc2.hashcat
 
 echo -e ""
 echo -e "\e[1;33m  Hashcat Switch -- 2100  \e[0m"
