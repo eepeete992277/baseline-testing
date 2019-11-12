@@ -1,4 +1,4 @@
-lets get some granularity on these things and stuff. lots of small things and stuff in a box. 
+granularity on these things and stuff. join me and put them all inside a box
 ======
 WORK IN PROGRESS 
 ======
