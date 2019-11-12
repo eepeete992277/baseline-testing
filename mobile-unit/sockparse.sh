@@ -19,7 +19,7 @@ echo
 
 echo "
 SMB       10.65.22.79.11    CORP/CORP-MDC$  FALSE        445
-SMB       192.168.1.2       tracecorp/eroyer  True        445
+SMB       192.168.1.2       corp1/eroyer  True        445
 SMB       10.65.66.204.117  CORP/CORP-MDC$  FALSE        445
 SMB       192.168.1.2      corp1/eroyer  True        445
 SMB       10.65.22.204.157  CORP/CORP-MDC$  FALSE        445
