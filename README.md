@@ -3,18 +3,18 @@
 
 This page will serve as both a wiki/reference and script repo for all the things n' stuff.
 
-## To Do:
--decide on naming conventions
--add wiki subpages for all baseline testing inclusions
--deploy report writing platform (roadmap-completion: 11/15/19)
--consider pushing this data into csv's and then django modules
--additions to ipt script
-        -username enumeration
-                -kerbrute preauth (low detection, no lockout)
-                -snmp
-                -RID cycling
-                -External sources (harvester, discover, linkedIn scraping, etc)
-
+## To Do:  
+-decide on naming conventions  
+-add wiki subpages for all baseline testing inclusions  
+-deploy report writing platform (roadmap-completion: 11/15/19)  
+-consider pushing this data into csv's and then django modules  
+-additions to ipt script  
+        -username enumeration  
+                -kerbrute preauth (low detection, no lockout)  
+                -snmp  
+                -RID cycling  
+                -External sources (harvester, discover, linkedIn scraping, etc)  
+  
 # Methodology | Order of Operations ##
 ##Start NMAP/Initial Recon Scan:
 (Self Explanatory)
