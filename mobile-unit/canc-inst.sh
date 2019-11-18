@@ -42,6 +42,7 @@ sudo git clone https://github.com/SecureAuthCorp/impacket.git /opt/impacket/ && 
 cd /opt/impacket/ && \
 sudo pip install .
 
+cd ~
 git clone --recurse-submodules https://github.com/cobbr/Covenant
 cd Covenant/Covenant
 dotnet build
