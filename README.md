@@ -49,10 +49,15 @@ msf-pw-attck.rc
 msf-web.rc  
 
 
-# This script uses the following repositories
+# These scripts use the following repositories
 - [Impacket](https://github.com/https://github.com/SecureAuthCorp/impacket)
 - [CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec)
 - [EyeWitness](https://github.com/FortyNorthSecurity/EyeWitness)
+- [Covenant](https://github.com/cobbr/Covenant)
+- [Responder](https://github.com/lgandx/Responder)
+- [mitm6](https://github.com/fox-it/mitm6)
+- [DotNet Core (2.2)](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+
 
 # TODO
 
