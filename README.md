@@ -31,10 +31,10 @@ canc-inst.sh
 -installs and configures impacket, proxychains, python-pip, responder, mitm6, impacket, covenant, and dotnet core
 
 cowboyrecon.sh  
--responder-runfinger scan . We are trying to identify hosts which are vulnerable to MS17, and
+-responder-runfinger scan . We are trying to identify hosts which are vulnerable to MS17, SMB Signing State, Null Session Presence
 
 sockparse.sh  
--pipe or copy form ntlmrelayx socks list to parse list into files that can be piped into for loops for registry dump and share Enumeration
+-pipe or copy form ntlmrelayx socks list to parse list into files that can be piped into for loops for registry dump and share Enumeration  
 -quick check for service accounts in secretsdump, if true, the scripts starts svcChk.sh
 
 svcChk.sh  
