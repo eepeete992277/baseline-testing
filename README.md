@@ -24,25 +24,25 @@ msf-web.rc
 
 /mobile-unit/
 ======
-autoMITM6.sh  
+**autoMITM6.sh**
 -starts MITM6 and responder via tmux split windows  
 
-canc-inst.sh  
+**canc-inst.sh**  
 -installs and configures impacket, proxychains, python-pip, responder, mitm6, impacket, covenant, and dotnet core
 
-cowboyrecon.sh  
+**cowboyrecon.sh**   
 -responder-runfinger scan . We are trying to identify hosts which are vulnerable to MS17, SMB Signing State, Null Session Presence
 
-sockparse.sh  
+**sockparse.sh**   
 -pipe or copy form ntlmrelayx socks list to parse list into files that can be piped into for loops for registry dump and share Enumeration  
 -quick check for service accounts in secretsdump, if true, the scripts starts svcChk.sh
 
-svcChk.sh  
+**svcChk.sh**  
 -Simply takes the parsed SVC accounts and attempts to log into the computer via SMB to verify validity of SVC accounts
   
 /reporting/
 ======
-report.sh  
+**report.sh**  
 -cat's directory contents to a text file, loops through that file and takes a screenshot of the window and saves to outpu
 -attempts to identify affected entities for common attacks (work in progress)  
 
