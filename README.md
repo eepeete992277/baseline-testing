@@ -44,7 +44,7 @@ svcChk.sh
 ======
 report.sh  
 -cat's directory contents to a text file, loops through that file and takes a screenshot of the window and saves to outpu
--attempts to identify affected entities for common attacks (work in progress)
+-attempts to identify affected entities for common attacks (work in progress)  
 
 
 iempty empty empty fill ine.
