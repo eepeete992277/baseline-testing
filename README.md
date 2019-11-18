@@ -1,4 +1,6 @@
 ***granularity on these things and stuff. join me and put them all inside a box***  
+Please see Wiki for detailed descriptions of attack vectors, techniques, tools, writeups, general knowledge dumping  
+[All-The-Things-Wiki](https://github.com/eepeete992277/baseline-testing/wiki)
 ##############  
 ##############
 
