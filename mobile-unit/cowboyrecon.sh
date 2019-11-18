@@ -3,7 +3,7 @@
 # scanner-recon script
 #
 # scanner-recon.sh Version: .00
-# Author: Evan Royer
+# Author: Even. R
 # Date: 11/11/19
 
 # Help Text
