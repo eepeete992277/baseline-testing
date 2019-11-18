@@ -12,16 +12,6 @@ git https://github.com/eepeete992277/baseline-testing ~/
 cp /baseline-testing/
 ```
 
-### Scripts Overview ###  
-/MSF Scripts/
-======
-msf-anon-rce.rc  
-msf-appendix.rc  
-msf-Maleick.rc  
-msf-pw-attck.rc  
-msf-web.rc  
-
-
 /mobile-unit/
 ======
 **autoMITM6.sh**
@@ -46,11 +36,15 @@ msf-web.rc
 -cat's directory contents to a text file, loops through that file and takes a screenshot of the window and saves to outpu
 -attempts to identify affected entities for common attacks (work in progress)  
 
+### Scripts Overview ###  
+/MSF Scripts/
+======
+msf-anon-rce.rc  
+msf-appendix.rc  
+msf-Maleick.rc  
+msf-pw-attck.rc  
+msf-web.rc  
 
-iempty empty empty fill ine.
-```bash
-example usage
-```
 
 # This script uses the following repositories
 - [Impacket](https://github.com/https://github.com/SecureAuthCorp/impacket)
@@ -61,6 +55,11 @@ example usage
 
 
 
+
+in progress.
+```bash
+example usage
+```
 
 
 
