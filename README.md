@@ -29,6 +29,9 @@ cp /baseline-testing/
 
 **svcChk.sh**  
 -Simply takes the parsed SVC accounts and attempts to log into the computer via SMB to verify validity of SVC accounts
+
+**commands.txt**
+-commands used to loop through smbclient.py with svcChk.sh ( eventually going to just echo these commands into commands.txt to start )
   
 /reporting/
 ======
