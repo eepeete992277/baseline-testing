@@ -1,4 +1,5 @@
-granularity on these things and stuff. join me and put them all inside a box
+***granularity on these things and stuff. join me and put them all inside a box***  
+  
 ======
 WORK IN PROGRESS 
 ======
