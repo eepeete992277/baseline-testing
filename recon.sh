@@ -55,6 +55,7 @@ mkdir logs/domain-info-users
 mkdir logs/shares
 mkdir scanner-screens
 mkdir kali-screens
+mkdir web-screens
 mkdir reporting
 mkdir reporting/anon-share
 mkdir reporting/ntlm-relay
@@ -68,12 +69,17 @@ for i in $(cat service-scans/ftp-hosts.txt); do echo $i; curl ftp://$i/ --max-ti
 
 # Check for Anonymous Domain Enumeration
 echo -e "\e[1;33mTesting Anonomous Domain Enumeration\e[0m"
-for i in $(cat ldaps-hosts.txt); do rpcclient -U "" -N -c enumdomusers $i > rpcclient-anon-users$i.log ; done
-for i in $(cat ldaps-hosts.txt); do enum4linux -G -U $i >> logs/domain-info-users/enum4linux-anon-$i.log ; done
+for i in $(cat ldaps-hosts.txt); do rpcclient -U "" -N -c enumdomusers $i > logs/rpcclient-anon-users$i.log ; done
+for i in $(cat ldaps-hosts.txt); do enum4linux -G -U $i > logs/enum4linux-anon-$i.log ; done
 
 # Web Vuln Scans #
 nikto -ssl -port 443 -host https-hosts.txt -Format html -output final_nikto_https -Tuning 0,5,8,a
 nikto  -host http-hosts.txt -Format html -output final_nikto_http -Tuning 0,5,8,a
+
+# EyeWitness or Aquatone for Web Applications
+echo -e "\e[1;33mRunning Aquatone\e[0m"
+#/opt/EyeWitness/EyeWitness.py -f urls --web --no-prompt
+cat service-scans/web-urls.txt | /opt/aquatone -out /$client/web-screens/
 
 # Run Metasploit Modules based on MSFenum.rc
 ## echo -e "\e[1;33mRunning Metasploit\e[0m"
