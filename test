@@ -1,0 +1,26 @@
+# Versions
+CHROME_DRIVER_VERSION=`curl -sS https://chromedriver.storage.googleapis.com/LATEST_RELEASE`
+
+# update , pyqt , selenium , phantomjs
+sudo apt-get update
+sudo apt-get install python-selenium
+sudo apt-get install phantomjs
+sudo apt-get install python-pyqt5
+
+# Install Chrome.
+sudo curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add
+sudo echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
+sudo apt-get -y update
+sudo apt-get -y install google-chrome-stable
+
+# Install ChromeDriver.
+wget -N https://chromedriver.storage.googleapis.com/$CHROME_DRIVER_VERSION/chromedriver_linux64.zip -P ~/
+unzip ~/chromedriver_linux64.zip -d ~/
+rm ~/chromedriver_linux64.zip
+sudo mv -f ~/chromedriver /usr/lib/chromium/chromedriver
+sudo chown root:root /usr/lib/chromium/chromedriver
+sudo chmod 0755 /usr/lib/chromium/chromedriver
+
+##Install firefoxdriver
+sudo apt-get install firefox
+sudo apt-get install firefoxdriver
